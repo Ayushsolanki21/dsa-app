@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Structure"
+        android:textColor="@color/red"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="55dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/bds"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:fontFeatureSettings="@string/app_name"
+                    android:insetTop="2dp"
+                    android:text="BASIC DATA STRUTURE"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+
+                    >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/ARRAY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Array "
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/SORTING"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Sorting"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Linked List"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/stack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Stack"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/Queue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Queue "
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/BinaryTree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Binary Tree "
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/BinarySearchTree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Binary Search Tree"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/Heap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="graph"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/Hashing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Hashing "
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="dynamic programming "
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/TC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:fontFeatureSettings="@string/app_name"
+                    android:insetTop="23dp"
+                    android:text="Time complexity"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+
+                    >
+
+                </Button>
+
+                <Button
+                    android:id="@+id/ADS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="placement dsa"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/oops"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="placement OOPS"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/dbms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="placement dbms"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+
+                <Button
+                    android:id="@+id/os"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="placement os"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/cn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="placement COMPUTER NETWORK"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/INTERVIEW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="INTERVIEW GUIDE"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/quanta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/teal_700"
+                    android:ellipsize="end"
+
+                    android:insetTop="23dp"
+                    android:text="Quantitative aptitude formula sheet"
+                    android:textColor="@color/white"
+                    android:textSize="24sp">
+
+                </Button>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3891179252230174/2329675204"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+    ...
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Data Structure"-->
+<!--        android:textColor="#F32525"-->
+
+<!--        android:textSize="40dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginVertical="55dp"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/adView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView">-->
+
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical">-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/bds"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="49dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:fontFeatureSettings="@string/app_name"-->
+<!--                    android:insetTop="2dp"-->
+<!--                    android:text="BASIC DATA STRUTURE"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp"-->
+
+<!--                    >-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/ARRAY"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Array "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/SORTING"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Sorting"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/LL"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Linked List"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/stack"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Stack"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/Queue"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Queue "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/BinaryTree"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Binary Tree "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/BinarySearchTree"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Binary Search Tree"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/Heap"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="graph"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/Hashing"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Hashing "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="dynamic programming "-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/TC"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:fontFeatureSettings="@string/app_name"-->
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Time complexity"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp"-->
+
+<!--                    >-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/ADS"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="placement dsa"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/oops"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="placement OOPS"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/dbms"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="placement dbms"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/os"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="placement os"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/cn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="placement COMPUTER NETWORK"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/INTERVIEW"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="INTERVIEW GUIDE"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/quanta"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/teal_700"-->
+<!--                    android:ellipsize="end"-->
+
+<!--                    android:insetTop="23dp"-->
+<!--                    android:text="Quantitative aptitude formula sheet"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="24sp">-->
+
+<!--                </Button>-->
+
+
+<!--            </LinearLayout>-->
+
+
+<!--        </ScrollView>-->
+<!--    </LinearLayout>-->
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="ca-app-pub-3940256099942544/6300978111"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>-->
+<!--    ...-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<androidx.constraintlayout.widget.ConstraintLayout&ndash;&gt;-->
+
+<!--&lt;!&ndash;    xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;    xmlns:ads="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+
+<!--&lt;!&ndash;    xmlns:tools="http://schemas.android.com/tools"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_weight="10"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:background="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;    tools:context=".MainActivity"&ndash;&gt;-->
+<!--&lt;!&ndash;    >&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/llll1"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+
+<!--&lt;!&ndash;        ads:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        tools:ignore="MissingConstraints">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/textView2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:fontFamily="@font/zilla_slab_highlight"&ndash;&gt;-->
+
+<!--&lt;!&ndash;            android:text="DATA STRUTURE"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/red"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="25dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            ads:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            ads:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            tools:ignore="MissingConstraints"></TextView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/linearLayout"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginVertical="75dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        tools:layout_editor_absoluteY="75dp">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        <ScrollView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            ads:layout_constraintBottom_toTopOf="@+id/adView"&ndash;&gt;-->
+<!--&lt;!&ndash;            ads:layout_constraintTop_toBottomOf="@+id/llll1">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:orientation="vertical">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/bds"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="49dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFeatureSettings="@string/app_name"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="2dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="BASIC DATA STRUTURE"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    >&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/ARRAY"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Array "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/SORTING"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Sorting"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/LL"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Linked List"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/stack"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Stack"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/Queue"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Queue "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/BinaryTree"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Binary Tree "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/BinarySearchTree"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Binary Search Tree"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/Heap"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="graph"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/Hashing"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Hashing "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="dynamic programming "&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/TC"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFeatureSettings="@string/app_name"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Time complexity"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    >&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/ADS"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="placement dsa"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/oops"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="placement OOPS"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/dbms"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="placement dbms"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/os"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="placement os"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/cn"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="placement COMPUTER NETWORK"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/INTERVIEW"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="INTERVIEW GUIDE"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/quanta"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="@color/teal_700"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:ellipsize="end"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/autour_one"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:insetTop="23dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Quantitative aptitude formula sheet"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="24sp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </Button>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    # main_activity.xmlns&ndash;&gt;-->
+<!--&lt;!&ndash;    ...&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;    <com.google.android.gms.ads.AdView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/adView"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="100dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_alignParentBottom="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:adSize="BANNER"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>&ndash;&gt;-->
+
+
+
+
+
+
+
+<!--&lt;!&ndash;</androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
+

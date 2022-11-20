@@ -1,0 +1,990 @@
+<resources>
+    <string name="app_name">DSA</string>
+
+
+    //BASIC DATA STRUCTURE
+    <string name="basic">
+        <br>"In computer science,a data structure is the organization and implementation of values and information. In	Basic data structures simple words, it is the way of organizing information in computer so that it can be more easily understood and worked with.\n</br>
+         </string>
+
+    <string name="types"><br><big><b>Types of Data Structures:-\n</b></big></br>
+        <br><big>There are two types of data structures:</big>\n</br>
+        <br>\n</br>
+        <br><big><b>1.Primitive data structure\n</b></big></br>
+        <br><big><b>2.Non-primitive data structure\n</b></big></br></string>
+
+
+    <string name="pds">
+           <br><b>1.Primitive Data structure\n</b></br>
+    <br>The primitive data structures are primitive data types. The int, char, float, double, and pointer are the primitive data structures that can hold a single value.\n</br>
+ <br>\n</br>
+        <br><b>2.Non-Primitive Data structure\n</b></br>
+        <br>The non-primitive data structure is divided into two types:\n</br>
+        <br>\n</br>
+        <br>1.Linear data structure\n</br>
+<br>2.Non-linear data structure\n</br>
+         <br>\n</br>
+           <br><b>1.Linear Data Structure\n</b></br>
+        <br>The arrangement of data in a sequential manner is known as a linear data structure. The data structures used for this purpose are Arrays, Linked list, Stacks, and Queues. In these data structures, one element is connected to only one another element in a linear form.\n</br>
+ <br>\n</br>
+        <br><b>2.Non-linear data structure\n</b></br>
+        <br>When one element is connected to the n number of elements known as a non-linear data structure. The best example is trees and graphs .the elements are arranged in a random manner.
+            \n</br>
+</string>
+
+
+    <string name="mo"><br><b>Major Operations\n</b></br>
+       <br>1.Searching\n</br>
+        <br>2.Sorting\n</br>
+        <br>3.Insertion\n</br>
+        <br>4.Updation \n</br>
+        <br>5.Deletion\n</br>
+    </string>
+
+
+    //Array start
+
+    <string name="ARRAY"> <br>"Arrays are defined as the collection of similar types of data items stored at contiguous memory locations.
+        It is one of the simplest data structures where each data element can be randomly accessed by using its index number."\n</br>
+        <br><b>Properties of array\n</b></br>
+        <br>1. Each element in an array is of the same data type and carries the same size that is 4 bytes.\n</br>
+        <br>2.Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.\n</br>
+        <br>3.Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</br>
+
+</string>
+
+
+    <string name="whyarray"><br>1. Sorting and searching a value in an array is easier.\n</br>
+    <br>2. Arrays are best to process multiple values quickly and easily.\n</br>
+    </string>
+
+    <string name="op"><br>The basic operations supported in the array\n</br>
+    <br>1.<b>Traversal</b>:-This operation is used to print the elements of the array\n</br>
+        <br>2.<b>Insertion</b>:-It is used to add an element at a particular index.\n</br>
+        <br>3.<b>Deletion</b> - It is used to delete an element from a particular index.\n</br>
+        <br>4.<b>Search</b> - It is used to search an element using the given index or by the value.\n</br>
+        <br>5.<b>Update</b> - It updates an element at a particular index.\n</br>
+
+    </string>
+
+    <string name="arraycode">
+        <br>// arrays example\n </br>
+        <br> \n </br>
+       <br> #include&lt;iostream&gt;\n </br>
+<br>using namespace std;\n </br>
+<br>\n </br>
+<br>int foo [] = {16, 2, 77, 40, 12071};\n </br>
+<br>int i, result=0;\n </br>
+<br>\n </br>
+<br>int main ()\n </br>
+<br>{\n </br>
+  <br>for ( i=0 ; i&lt;5 ; i++ )\n </br>
+  <br>{\n </br>
+    <br>result += foo[i];\n </br>
+  <br>}\n </br>
+  <br>cout &lt;&lt;result;\n </br>
+ <br> return 0;\n </br>
+<br>}\n </br>
+    </string>
+
+    //Sorting
+    <string name="sorting">
+<br>1.Selection Sort\n</br>
+<br>2.Insertion Sort\n</br>
+<br>3.Bubble Sort\n</br>
+<br>4.Quicksort\n</br>
+<br>5.Heap Sort\n</br>
+<br>6.Merge Sort\n</br>
+</string>
+
+
+    //SELECTION SORT
+
+
+    <string name="selection"><br>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.\n</br>
+        <br>\n</br>
+        <br><b>-></b>The subarray which is already sorted. \n</br>
+        <br><b>-></b>Remaining subarray which is unsorted.\n</br>
+        <br>\n</br>
+        <br> In every iteration of selection sort, the minimum element (considering ascending order) from the unsorted subarray is picked and moved to the sorted subarray. \n</br>
+
+</string>
+
+
+    <string name="workselection">
+        <br> Lets consider the following array as an example: arr[] = {64, 25, 12, 22, 11}\n</br>
+ <br>\n</br>
+<br>First pass:\n</br>
+ <br>\n</br>
+<br>For the first position in the sorted array, the whole array is traversed from index 0 to 4 sequentially. The first position where 64 is stored presently, after traversing whole array it is clear that 11 is the lowest value.\n</br>
+  <br><b> 64     25   	 	      12   	      22   	      11</b>\n</br>
+<br>Thus, replace 64 with 11. After one iteration 11, which happens to be the least value in the array, tends to appear in the first position of the sorted list.\n</br>
+ <br> <b> 11   	   25   	   12   	   22   	   64</b>\n</br>
+<br>Second Pass:\n</br>
+ <br>\n</br>
+<br>For the second position, where 25 is present, again traverse the rest of the array in a sequential manner.\n</br>
+  <br><b>11   	   25   	   12   	   22   	   64</b> \n</br>
+<br>After traversing, we found that 12 is the second lowest value in the array and it should appear at the second place in the array, thus swap these values.\n</br>
+  <br><b> 11   	   12   	   25   	   22   	   64</b>\n</br>
+<br>Third Pass:\n</br>
+ <br>\n</br>
+<br>Now, for third place, where 25 is present again traverse the rest of the array and find the third least value present in the array.\n</br>
+  <br><b> 11   	   12   	   25   	   22   	   64</b>\n</br>
+<br>While traversing, 22 came out to be the third least value and it should appear at the third place in the array, thus swap 22 with element present at third position.\n</br>
+  <br><b>11   	   12   	   22   	   25   	   64</b> \n</br>
+<br>Fourth pass:\n</br>
+ <br>\n</br>
+<br>Similarly, for fourth position traverse the rest of the array and find the fourth least element in the array\n</br>
+<br>As 25 is the 4th lowest value hence, it will place at the fourth position.\n</br>
+ <br> <b>11   	   12   	   22   	   25   	   64</b> \n</br>
+<br>Fifth Pass:\n</br>
+ <br>\n</br>
+<br>At last the largest value present in the array automatically get placed at the last position in the array\n</br>
+<br>The resulted array is the sorted array.\n</br>
+<br> <b> 11   	   12   	   22   	   25   	   64</b> \n</br>
+    </string>
+
+
+    //INSERTION SORT
+    <string name="insertion">
+        <br>Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part.
+        Values from the unsorted part are picked and placed at the correct position in the sorted part.\n</br>
+<br>\n</br>
+        <br>Characteristics of Insertion Sort:\n</br>
+ <br><b>-></b>This algorithm is one of the simplest algorithm with simple implementation\n</br>
+ <br><b>-></b>Basically, Insertion sort is efficient for small data values\n</br>
+ <br><b>-></b>Insertion sort is adaptive in nature, i.e. it is appropriate for data sets which are already partially sorted.\n</br>
+</string>
+
+
+    <string name="workinsertion">
+       <br>Consider an example: arr[]: {12, 11, 13, 5, 6}\n</br>
+<br>\n</br>
+   <br><b> 12   	   11   	   13   	   5   	   6   </b>\n</br>
+    <br>\n</br>
+        <br><b>First Pass:</b></br>
+<br>\n</br>
+ <br>Initially, the first two elements of the array are compared in insertion sort.\n</br>
+     <br><b>12   	   11   	   13   	   5   	   6  </b>\n</br>
+   <br>  Here, 12 is greater than 11 hence they are not in the ascending order and 12 is not at its correct position. Thus, swap 11 and 12.\n</br>
+    <br> So, for now 11 is stored in a sorted sub-array.\n</br>
+   <br><b>  11   	   12   	   13   	   5   	   6 </b>\n</br>
+<br>\n</br>
+        <br><b>Second Pass:</b>\n</br>
+<br>\n</br>
+  <br>Now, move to the next two elements and compare them\n</br>
+    <br><b> 11   	   12   	   13   	   5   	   6   </b>\n</br>
+    <br> Here, 13 is greater than 12, thus both elements seems to be in ascending order, hence, no swapping will occur. 12 also stored in a sorted sub-array along with 11\n</br>
+<br>\n</br>
+      <br> <b> Third Pass:</b> \n</br>
+<br>\n</br>
+
+    <br> Now, two elements are present in the sorted sub-array which are 11 and 12\n</br>
+    <br> Moving forward to the next two elements which are 13 and 5\n</br>
+    <br> <b>11   	   12   	   13   	   5   	   6   </b>\n</br>
+    <br> Both 5 and 13 are not present at their correct place so swap them\n</br>
+  <br> <b> 11   	   12   	   5   	   13   	   6   </b> \n</br>
+    <br> After swapping, elements 12 and 5 are not sorted, thus swap again\n</br>
+    <br><b> 11   	   5   	   12   	   13   	   6   </b> \n</br>
+    <br>Here, again 11 and 5 are not sorted, hence swap again\n</br>
+    <br><b> 5   	   11   	   12   	   13   	   6   </b>\n</br>
+    <br>here, it is at its correct position\n</br>
+<br>\n</br>
+    <br><b>Fourth Pass:</b>\n</br>
+<br>\n</br>
+    <br>Now, the elements which are present in the sorted sub-array are 5, 11 and 12\n</br>
+<br>    Moving to the next two elements 13 and 6\n</br>
+<br><b>5   	   11   	   12   	   13   	   6  </b> \n</br>
+<br>Clearly, they are not sorted, thus perform swap between both\n</br>
+<br><b>5   	   11   	   12   	   6   	   13  </b> \n</br>
+<br>Now, 6 is smaller than 12, hence, swap again\n</br>
+<br><b>5   	   11   	   6   	   12   	   13   </b>\n</br>
+<br>Here, also swapping makes 11 and 6 unsorted hence, swap again\n</br>
+<br><b>5   	   6   	   11   	   12   	   13 </b>  \n</br>
+<br>#Finally, the array is completely sorted.\n</br>
+    </string>
+
+
+    //Bubble Sort Algorithm
+
+    <string name="workbubble">
+       <br>Consider an array <b>arr[] = {5, 1, 4, 2, 8}</b>\n</br>
+  <br>\n</br>
+        <br><b>First Pass: </b>\n</br>
+  <br>\n</br>
+  <br>Bubble sort starts with very first two elements, comparing them to check which one is greater.\n</br>
+        <br><b>( 5 1 4 2 8 ) –> ( 1 5 4 2 8 )</b>, Here, algorithm compares the first two elements, and swaps since 5 > 1. \n</br>
+        <br><b>( 1 5 4 2 8 ) –>  ( 1 4 5 2 8 )</b>, Swap since 5 > 4 \n</br>
+        <br><b>( 1 4 5 2 8 ) –>  ( 1 4 2 5 8 )</b>, Swap since 5 > 2 \n</br>
+        <br><b>( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )</b></br>
+            <br>Now, since these elements are already in order (8 > 5), algorithm does not swap them.\n</br>
+          <br>\n</br>
+        <br><b>Second Pass:</b>\n</br>
+  <br>\n</br>
+  <br>Now, during second iteration it should look like this:\n</br>
+        <br><b>( 1 4 2 5 8 ) –> ( 1 4 2 5 8 )</b> \n</br>
+        <br><b>( 1 4 2 5 8 ) –> ( 1 2 4 5 8 )</b>, Swap since 4 > 2\n</br>
+        <br><b>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )</b> \n</br>
+        <br><b>( 1 2 4 5 8 ) –>  ( 1 2 4 5 8 )</b>\n</br>
+          <br>\n</br>
+        <br><b>Third Pass:</b> \n</br>
+  <br>\n</br>
+  <br>Now, the array is already sorted, but our algorithm does not know if it is completed.\n</br>
+  <br>The algorithm needs one whole pass wit\nhout any swap to know it is sorted.\n</br>
+        <br><b>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )</b> \n</br>
+        <br><b>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) </b>\n</br>
+        <br><b>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 )</b> \n</br>
+        <br><b>( 1 2 4 5 8 ) –> ( 1 2 4 5 8 ) </b>\n</br>
+
+    </string>
+
+
+    //QUICK SORT
+
+    <string name="QUICK">
+        <br>Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as pivot and partitions the given array around the picked pivot.
+            There are many different versions of quickSort that pick pivot in different ways. \n</br>
+<br>\n</br>
+<br>->Always pick first element as pivot.\n</br>
+<br>->Always pick last element as pivot (implemented below)\n</br>
+<br>->Pick a random element as pivot.\n</br>
+<br>->Pick median as pivot.\n</br>
+        <br>\n</br>
+<br>The key process in quickSort is partition().Target of partitions is, given an array and an element x of array as pivot, put x at its correct position in sorted array and put all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x.All this should be done in linear time.
+</br>
+    </string>
+    <string name="workquick">
+        <br>Consider: arr[] = {10, 80, 30, 90, 40, 50, 70}\n</br>
+<br>\n</br>
+<br>Indexes:  0   1   2   3   4   5   6 \n</br>
+    <br>low = 0, high =  6, pivot = arr[h] = 70\n</br>
+<br>Initialize index of smaller element, i = -1\n</br>
+<br>\n</br>
+
+
+<br>Traverse elements from j = low to high-1\n</br>
+<br>j = 0: Since arr[j] <b> lessthan equal </b>pivot, do i++ and swap(arr[i], arr[j])\n</br>
+<br>i = 0 \n</br>
+<br>arr[] = {10, 80, 30, 90, 40, 50, 70} // No change as i and j are same\n</br>
+<br>j = 1: Since arr[j] > pivot, do nothing\n</br>
+<br>\n</br>
+
+
+<br>j = 2 : Since arr[j]<b> lessthan equal </b> pivot, do i++ and swap(arr[i], arr[j])\n</br>
+<br>i = 1\n</br>
+<br>arr[] = {10, 30, 80, 90, 40, 50, 70} // We swap 80 and 30 \n</br>
+<br>\n</br>
+
+
+<br>j = 3 : Since arr[j] > pivot, do nothing // No change in i and arr[]\n</br>
+<br>j = 4 : Since arr[j]<b> lessthan equal </b>pivot, do i++ and swap(arr[i], arr[j])\n</br>
+<br>i = 2\n</br>
+<br>arr[] = {10, 30, 40, 90, 80, 50, 70} // 80 and 40 Swapped\n</br>
+<br>\n</br>
+
+
+<br>j = 5 : Since arr[j] <b> lessthan equal </b> pivot, do i++ and swap arr[i] with arr[j] \n</br>
+<br>i = 3 \n</br>
+<br>arr[] = {10, 30, 40, 50, 80, 90, 70} // 90 and 50 Swapped \n</br>
+<br>\n</br>
+
+
+<br>We come out of loop because j is now equal to high-1.\n</br>
+<br>Finally we place pivot at correct position by swapping arr[i+1] and arr[high] (or pivot) \n</br>
+<br>arr[] = {10, 30, 40, 50, 70, 90, 80} // 80 and 70 Swapped \n</br>
+<br>\n</br>
+
+
+<br>Now 70 is at its correct place. All elements smaller than 70 are before it and all elements greater than 70 are after it.\n</br>
+<br>Since quick sort is a recursive function, we call the partition function again at left and right partitions\n</br>
+<br>\n</br>
+
+
+<br>Again call function at right part and swap 80 and 90\n</br>
+
+
+    </string>
+
+
+    //LINK LIST
+    <string name="LINKILIST">
+        <bs>Topics :</bs>
+<bs>\n</bs>
+<bs>1.Singly Linked List\n</bs>
+<bs>2.Circular Linked List\n</bs>
+<bs>3.Doubly Linked List\n</bs>
+    </string>
+    //
+
+
+    <string name="WHYLL">
+       <bs> Arrays can be used to store linear data of similar types, but arrays have the following limitations. \n</bs>
+<bs>\n</bs>
+<bs><b>1.The size of the arrays is fixed:</b> So we must know the upper limit on the number of elements in advance. Also, generally, the allocated memory is equal to the upper limit irrespective of the usage.\n</bs>
+        <bs><b>2. Insertion of a new element / Deletion of a existing element in an array of elements is expensive: </b>The room has to be created for the new elements and to create room existing elements have to be shifted but in Linked list if we have the head node then we can traverse to any node through it and insert new node at the required position.\n</bs>
+    </string>
+    //
+
+    <string name="advantagell">
+       <br>Advantages over arrays:\n</br>
+        <br>1. <b>Dynamic Array.</b>\n</br>
+        <br>2. <b>Ease of Insertion/Deletion.</b>\n</br>
+    </string>
+    //
+
+    <string name="drwbackll">
+        <bs><b>Drawbacks: </b>\n</bs>
+ <bs>1. Random access is not allowed. We have to access elements sequentially starting from the first node(head node). So we cannot do binary search with linked lists efficiently with its default implementation. \n</bs>
+<bs>2. Extra memory space for a pointer is required with each element of the list. \n</bs>
+<bs>3. Not cache friendly. Since array elements are contiguous locations, there is locality of reference which is not there in case of linked lists.\n</bs>
+ <bs>\n</bs>
+ <bs><b>Representation: </b>\n</bs>
+ <bs>A linked list is represented by a pointer to the first node of the linked list. The first node is called the head. If the linked list is empty, then the value of the head points to NULL. \n</bs>
+ <bs>\n</bs>
+<bs>Each node in a list consists of at least two parts: \n</bs>
+<bs>\n</bs>
+<bs>1. A Data Item (we can store integer, strings or any type of data).\n</bs>
+<bs>2. Pointer (Or Reference) to the next node (connects one node to another) or An address of another node\n</bs>
+    </string>
+
+
+    <string name="linklistcode">
+       <br> #include &lt;iostream&gt;\n</br>
+ <br>using namespace std;\n</br>
+ <br>struct Node {\n</br>
+   <br> int data;\n</br>
+   <br> struct Node *next;\n</br>
+ <br>};\n</br>
+ <br>struct Node* head = NULL;\n</br>
+ <br>void insert(int new_data) {\n</br>
+   <br> struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));\n</br>
+   <br> new_node->data = new_data;\n</br>
+   <br> new_node->next = head;\n</br>
+   <br> head = new_node;\n</br>
+ <br>}\n</br>
+ <br>void display() {\n</br>
+    <br>struct Node* ptr;\n</br>
+  <br>  ptr = head;\n</br>
+   <br> while (ptr != NULL) {\n</br>
+     <br>  cout&lt;&lt; ptr->data &lt;&lt;" ";\n</br>
+     <br>  ptr = ptr->next;\n</br>
+   <br> }\n</br>
+ <br>}\n</br>
+ <br>int main() {\n</br>
+    <br>insert(3);\n</br>
+    <br>insert(1);\n</br>
+    <br>insert(7);\n</br>
+    <br>insert(2);\n</br>
+    <br>insert(9);\n</br>
+    <br>cout&lt;&lt;"The linked list is: ";\n</br>
+    <br>display();\n</br>
+    <br>return 0;\n</br>
+        <br>}\n</br>
+    </string>
+    //STACK
+
+
+    <string name="stack">
+        <br>Mainly the following four basic operations are performed in the stack:</br>
+        <br>\n</br>
+        <br><b><big>1. Push:</big></b> Adds an item to the stack. If the stack is full, then it is said to be an Overflow condition.\n</br>
+       <br><b><big>2. Pop:</big></b> Removes an item from the stack. The items are popped in the reversed order in which they are pushed. If the stack is empty, then it is said to be an Underflow condition.\n</br>
+       <br><b><big>3. Peek or Top:</big></b>Returns the top element of the stack.\n</br>
+  <br><b><big>4. isEmpty:</big></b> Returns true if the stack is empty, else false.\n</br>
+           <br>\n</br>
+        <br><big>><b>-->Time Complexities of operations on the stack:</b></big>\n</br>
+  <br>\n</br>
+   <br>push(), pop(), isEmpty() and peek() all take <b>O(1) </b>time. We do not run any loop in any of these operations.\n</br>
+         <br>\n</br>
+        
+        
+        <br><big><b>Application of Stack in real life:\n</b></big></br>
+ <br>\n</br>
+<br>1.CD/DVD stand.\n</br>
+<br>2.Stack of books in a book shop.\n</br>
+<br>3.Undo and Redo mechanism in text editors.\n</br>
+<br>4.The history of a web browser is stored in the form of a stack.\n</br>
+<br>5.Call logs, E-mails, and Google photos in any gallery are also stored in form of a stack.\n</br>
+<br>6.YouTube downloads and Notifications are also shown in LIFO format(the latest appears first ).\n</br>
+        <br>\n</br>   
+        
+ <br><big><b>Advantages of Stack:\n</b></big></br>
+<br>\n</br>
+ <br>1.Stack helps in managing data that follows the LIFO technique.\n</br> 
+ <br>2.Stacks are be used for systematic Memory Management. \n</br> 
+ <br>3.It is used in many virtual machines like JVM.\n</br> 
+ <br>4.When a function is called, the local variables and other function parameters are stored in the stack and automatically destroyed once returned from the function. Hence, efficient function management.\n</br> 
+ <br>5.Stacks are more secure and reliable as they do not get corrupted easily.\n</br> 
+ <br>6.Stack allows control over memory allocation and deallocation.\n</br> 
+ <br>7.Stack cleans up the objects automatically.\n</br> 
+         <br>\n</br>   
+        
+ <br><big><b>Disadvantages of Stack:\n</b></big></br>
+  <br>\n</br>   
+<br>1.Stack memory is of limited size.\n</br> 
+<br>2.The total of size of the stack must be defined before.\n</br> 
+<br>3.If too many objects are created then it can lead to stack overflow.\n</br> 
+<br>4.Random accessing is not possible in stack.\n</br> 
+<br>5.If the stack falls outside the memory it can lead to abnormal termination.\n</br> 
+    </string>
+
+    <string name="stackcode">
+      <br>  #include &lt;iostream&gt;\n</br>
+ <br>using namespace std;\n</br>
+ <br>int stack[100], n=100, top=-1;\n</br>
+ <br>void push(int val) {\n</br>
+   <br> if(top>=n-1)\n</br>
+    <br>cout&lt;&lt;"Stack Overflow"&lt;&lt;endl;\n</br>
+    <br>else {\n</br>
+      <br> top++;\n</br>
+      <br> stack[top]=val;\n</br>
+   <br> }\n</br>
+ <br>}\n</br>
+ <br>void pop() {\n</br>
+   <br> if(top&lt;=-1)\n</br>
+   <br> cout&lt;&lt;"Stack Underflow"&lt;&lt;endl;\n</br>
+   <br> else {\n</br>
+      <br> cout&lt;&lt;"The popped element is "&lt;&lt;stack[top] &lt;&lt;endl;\n</br>
+      <br> top--;\n</br>
+    <br>}\n</br>
+ <br>}\n</br>
+ <br>void display() {\n</br>
+    <br>if(top>=0) {\n</br>
+      <br> cout&lt;&lt;"Stack elements are:";\n</br>
+       <br>for(int i=top; i>=0; i--)\n</br>
+      <br> cout&lt;&lt;stack[i]&lt;&lt;" ";\n</br>
+      <br> cout&lt;&lt;endl;\n</br>
+   <br> } else\n</br>
+    <br>cout&lt;&lt;"Stack is empty";\n</br>
+ <br>}\n</br>
+ <br>int main() {\n</br>
+    <br>int ch, val;\n</br>
+   <br> cout&lt;&lt;"1) Push in stack"&lt;&lt;endl;\n</br>
+    <br>cout&lt;&lt;"2) Pop from stack"&lt;&lt;endl;\n</br>
+   <br> cout&lt;&lt;"3) Display stack"&lt;&lt;endl;\n</br>
+    <br>cout&lt;&lt;"4) Exit"&lt;&lt;endl;\n</br>
+    <br>do {\n</br>
+       <br>cout&lt;&lt;"Enter choice: "&lt;&lt;endl;\n</br>
+      <br> cin>>ch;\n</br>
+       <br>switch(ch) {\n</br>
+         <br> case 1: {\n</br>
+             <br>cout&lt;&lt;"Enter value to be pushed:"&lt;&lt;endl;\n</br>
+            <br> cin>>val;\n</br>
+            <br> push(val);\n</br>
+            <br> break;\n</br>
+          <br>}\n</br>
+          <br>case 2: {\n</br>
+             <br>pop();\n</br>
+             <br>break;\n</br>
+          <br>}\n</br>
+          <br>case 3: {\n</br>
+             <br>display();\n</br>
+             <br>break;\n</br>
+          <br>}\n</br>
+          <br>case 4: {\n</br>
+            <br> cout&lt;&lt;"Exit"&lt;&lt;endl;\n</br>
+             <br>break;\n</br>
+          <br>}\n</br>
+          <br>default: {\n</br>
+             <br>cout&lt;&lt;"Invalid Choice"&lt;&lt;endl;\n</br>
+          <br>}\n</br>
+       <br>}\n</br>
+    <br>}while(ch!=4);\n</br>
+    <br>return 0;\n</br>
+        <br>}\n</br>
+    </string>
+
+    // QUEUE
+    <string name="queuein">
+        <br>Similar to Stack, Queue is a linear data structure that follows a particular order in which the operations are performed for storing data. The order is First In First Out (FIFO).\n</br>
+        One can imagine a queue as a line of people waiting to receive something in sequential order which starts from the beginning of the line. It is an ordered list in which insertions are done at one end which is known as the rear and deletions are done from the other end known as the front.\n
+           <br> A good example of a queue is any queue of consumers for a resource where the consumer that came first is served first.\n </br>
+<br>\n</br>
+        <br>The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.\n</br>
+       <br> \n</br>
+        <br><big><b>Basic Operations on Queue:</b></big>\n</br>
+ <br> \n</br>
+        <br><big><b>void enqueue(int data):</b></big> Inserts an element at the end of the queue i.e. at the rear end.\n</br>
+        <br><big><b>int dequeue():</b></big> This operation removes and returns an element that is at the front end of the queue.\n</br>
+ <br> \n</br>
+        <br><big><b>Auxiliary Operations on Queue:</b></big>\n</br>
+ <br> \n</br>
+        <br><big><b>int front():</b></big> This operation returns the element at the front end without removing it.\n</br>
+     <br> \n</br>
+        <br><big><b>int rear():</b></big> This operation returns the element at the rear end without removing it.\n</br>
+      <br> \n</br>
+        <br><big><b>int isEmpty():</b></big> This operation indicates whether the queue is empty or not.\n</br>
+       <br> \n</br>
+        <br><big><b>int size(): </b></big>This operation returns the size of the queue i.e. the total number of elements it contains.\n</br>
+ <br> \n</br>
+        <br><big><b>Types of Queues:</b></big>\n</br>
+ <br> \n</br>
+        <br><big><b>Simple Queue:</b></big> Simple queue also known as a linear queue is the most basic version of a queue. Here, insertion of an element i.e. the Enqueue operation takes place at the rear end and removal of an element i.e. the Dequeue operation takes place at the front end.\n</br>
+    <br> \n</br>
+        <br><big><b>Circular Queue:</b></big>  In a circular queue, the element of the queue act as a circular ring. The working of a circular queue is similar to the linear queue except for the fact that the last element is connected to the first element. Its advantage is that the memory is utilized in a better way. This is because if there is an empty space i.e. if no element is present at a certain position in the queue, then an element can be easily added at that position.\n</br>
+    <br> \n</br>
+        <br><big><b>Priority Queue:</b></big> This queue is a special type of queue. Its specialty is that it arranges the elements in a queue based on some priority. The priority can be something where the element with the highest value has the priority so it creates a queue with decreasing order of values. The priority can also be such that the element with the lowest value gets the highest priority so in turn it creates a queue with increasing order of values.\n</br>
+     <br> \n</br>
+        <br><big><b>Dequeue:</b></big> Dequeue is also known as Double Ended Queue. As the name suggests double ended, it means that an element can be inserted or removed from both the ends of the queue unlike the other queues in which it can be done only from one end. Because of this property it may not obey the First In First Out property. \n</br>
+
+    </string>
+
+    <string name="queuecode">
+       <br> #include &lt;iostream&gt;\n</br>
+<br>using namespace std;\n</br>
+<br>int queue[100], n = 100, front = - 1, rear = - 1;\n</br>
+<br>void Insert() {\n</br>
+<br>   int val;\n</br>
+<br>   if (rear == n - 1)\n</br>
+<br>   cout&lt;&lt;"Queue Overflow"&lt;&lt;endl;\n</br>
+<br>  else {\n</br>
+<br>      if (front == - 1)\n</br>
+<br>      front = 0;\n</br>
+<br>      cout&lt;&lt;"Insert the element in queue : "&lt;&lt;endl;\n</br>
+<br>     cin>>val;\n</br>
+<br>     rear++;\n</br>
+<br>      queue[rear] = val;\n</br>
+<br>   }\n</br>
+<br>}\n</br>
+<br>void Delete() {\n</br>
+<br>   if (front == - 1 || front > rear) {\n</br>
+<br>      cout&lt;&lt;"Queue Underflow ";\n</br>
+<br>      return ;\n</br>
+<br>   } else {\n</br>
+<br>      cout&lt;&lt;"Element deleted from queue is : "&lt;&lt; queue[front] &lt;&lt;endl;\n</br>
+<br>      front++;;\n</br>
+<br>   }\n</br>
+<br>}\n</br>
+<br>void Display() {\n</br>
+<br>   if (front == - 1)\n</br>
+<br>   cout&lt;&lt;"Queue is empty"&lt;&lt;endl;\n</br>
+<br>   else {\n</br>
+<br>      cout&lt;&lt;"Queue elements are : ";\n</br>
+<br>      for (int i = front; i &lt;= rear; i++)\n</br>
+<br>      cout&lt;&lt;queue[i]&lt;&lt;" ";\n</br>
+<br>         cout&lt;&lt;endl;\n</br>
+<br>   }\n</br>
+<br>}\n</br>
+<br>int main() {\n</br>
+<br>   int ch;\n</br>
+<br>   cout&lt;&lt;"1) Insert element to queue"&lt;&lt;endl;\n</br>
+<br>  cout&lt;&lt;"2) Delete element from queue"&lt;&lt;endl;\n</br>
+<br>   cout&lt;&lt;"3) Display all the elements of queue"&lt;&lt;endl;\n</br>
+<br>   cout&lt;&lt;"4) Exit"&lt;&lt;endl;\n</br>
+<br>   do {\n</br>
+<br>      cout&lt;&lt;"Enter your choice : "&lt;&lt;endl;\n</br>
+<br>      cin>>ch;\n</br>
+<br>      switch (ch) {\n</br>
+<br>         case 1: Insert();\n</br>
+<br>         break;\n</br>
+<br>         case 2: Delete();\n</br>
+<br>         break;\n</br>
+<br>        case 3: Display();\n</br>
+<br>         break;\n</br>
+<br>        case 4: cout&lt;&lt;"Exit"&lt;&lt;endl;\n</br>
+<br>       break;\n</br>
+<br>      default: cout&lt;&lt;"Invalid choice"&lt;&lt;endl;\n</br>
+<br>    }\n</br>
+<br> } while(ch!=4);\n</br>
+<br>return 0;\n</br>
+<br>}\n</br>
+
+    </string>
+
+    //BINARY TREE
+    <string name="BINARYTREE">
+       <br>A tree is a popular data structure that is non-linear in nature. Unlike other data structures like array, stack, queue, and linked list which are linear in nature, a tree represents a hierarchical structure. The ordering information of a tree is not important. A tree contains nodes and 2 pointers. These two pointers are the left child and the right child of the parent node. Let us understand the terms of tree in detail.\n</br>
+   <br> \n</br>
+       <br><b>Root:</b> The root of a tree is the topmost node of the tree that has no parent node. There is only one root node in every tree.\n</br>
+       <br><b>Edge:</b> Edge acts as a link between the parent node and the child node.\n</br>
+       <br><b>Leaf:</b> A node that has no child is known as the leaf node. It is the last node of the tree. There can be multiple leaf nodes in a tree.\n</br>
+       <br><b>Depth:</b> The depth of the node is the distance from the root node to that particular node.\n</br>
+       <br><b>Height:</b> The height of the node is the distance from that node to the deepest node of the tree.\n</br>
+       <br><b>Height of tree:</b> The Height of the tree is the maximum height of any node.\n</br>
+        <br> \n</br>
+        <br> <big><b>Why Use Trees?\n</b></big></br>
+
+<br> \n</br>
+<br>1. One reason to use trees might be because you want to store information that naturally forms a hierarchy. \n</br><br>2. Trees (with some ordering e.g., BST) provide moderate access/search (quicker than Linked List and slower than arrays).\n</br>
+<br>3. Trees provide moderate insertion/deletion (quicker than Arrays and slower than Unordered Linked Lists). \n</br>
+<br>4. Like Linked Lists and unlike Arrays, Trees don’t have an upper limit on the number of nodes as nodes are linked using pointers.\n</br>
+  <br> \n</br>
+    <br><big><b>Binary Tree:</b></big> A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child. \n</br>
+<br> \n</br>
+       <br><big><b>Binary Tree Representation:</b></big> A tree is represented by a pointer to the topmost node of the tree. If the tree is empty, then the value of the root is NULL. \n</br>
+<br>A Tree node contains the following parts. \n</br>
+<br> \n</br>
+<br><big><b>1.Data</b></big> \n</br>
+       <br><big><b>2.Pointer to the left child </b></big>\n</br>
+       <br><big><b>3.Pointer to the right child</b></big>\n</br>
+<br> \n</br>
+        <big><b>#The properties of a binary tree are discussed.\n</b></big> <br />
+<br> \n</br>
+<br><b>1) The maximum number of nodes at level ‘l’ of a binary tree is 2l.</b>\n</br>
+<br>Here level is the number of nodes on the path from the root to the node (including root and node). Level of the root is 0.\n</br>
+<br>This can be proved by induction.\n</br>
+<br>For root, l = 0, number of nodes = 20 = 1\n</br>
+<br>Assume that the maximum number of nodes on level ‘l’ is 2l\n</br>
+<br>Since in Binary tree every node has at most 2 children, next level would have twice nodes, i.e. 2 * 2l\n</br>
+<br> \n</br>
+<br><b>2) The Maximum number of nodes in a binary tree of height ‘h’ is 2h – 1.</b>\n</br>
+<br>Here the height of a tree is the maximum number of nodes on the root to leaf path. Height of a tree with a single node is considered as 1.\n</br>
+<br>This result can be derived from point 2 above. A tree has maximum nodes if all levels have maximum nodes. So maximum number of nodes in a binary tree of height h is 1 + 2 + 4 + .. + 2h-1. This is a simple geometric series with h terms and sum of this series is 2h– 1.\n</br>
+    <br> some books, the height of the root is considered as 0. In this convention, the above formula becomes 2h+1 – 1\n</br>
+<br> \n</br>
+<br><b>3) In a Binary Tree with N nodes, minimum possible height or the minimum number of levels is Log2(N+1).</b>\n</br>
+<br>There should be at least one element on each level, so the height cannot be more than N. A binary tree of height ‘h’ can have maximum 2h – 1 nodes (previous property). So the number of nodes will be less than or equal to this maximum value.</br>
+       <br><b>So the minimum height possible is | log2(N+1)\n </b></br>
+<br> \n</br>
+      <br><b> 4) A Binary Tree with L leaves has at least | Log2L |+ 1   levels.</b>\n</br>
+ <br>A Binary tree has the maximum number of leaves (and a minimum number of levels) when all levels are fully filled. Let all leaves be at level l, then below is true for the number of leaves L.\n </br>
+<br> \n</br>
+  <br><b> 5) In Binary tree where every node has 0 or 2 children, the number of leaf nodes is always one more than nodes with two children.</b>\n</br>
+       <br> \n</br>
+       <br><b>  6) In a non empty binary tree, if n is the total number of nodes and e is the total number of edges, then e = n-1 </b>\n</br>
+<br> \n</br>
+<br>Every node in a binary tree has exactly one parent with the exception of root node. So if n is the total\n</br>
+<br>number of nodes then n-1 nodes have exactly one parent. There is only one edge between any child and its\n</br>
+<br>parent. So the total number of edges is n-1. \n</br>
+<br> \n</br>
+         <br><b> The following are common types of Binary Trees. </b>\n</br>
+<br> \n</br>
+         <br><big><b> Full Binary Tree:</b></big>\n</br>
+<br> \n</br>
+  <br>A Binary Tree is a full binary tree if every node has 0 or 2 children. The following are the examples of a full binary tree. We can also say a full binary tree is a binary tree in which all nodes except leaf nodes have two children. \n</br>
+<br> \n</br>
+ <br>A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children. It is also known as a proper binary tree.\n</br>
+<br> \n</br>
+ <br><big><b>Complete Binary Tree:-</b></big>\n</br>
+<br> \n</br>
+    <br>A Binary Tree is a Complete Binary Tree if all the levels are completely filled except possibly the last level and the last level has all keys as left as possible.\n</br>
+<br> \n</br>
+    <br>A complete binary tree is just like a full binary tree, but with two major differences:\n</br>
+<br> \n</br>
+    <br>1.Every level must be completely filled\n</br>
+    <br>2.All the leaf elements must lean towards the left.\n</br>
+    <br>3.The last leaf element might not have a right sibling i.e. a complete binary tree doesn’t have to be a full binary tree.\n</br>
+  <br> \n</br>
+ <br><big><b>Perfect Binary Tree:-</b></big>\n</br>
+  <br> \n</br>
+ <br>A Binary tree is a Perfect Binary Tree in which all the internal nodes have two children and all leaf nodes are at the same level.\n</br>
+ <br>A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.\n</br>
+ <br> \n</br>
+ <br><big><b>Balanced Binary Tree:-</b></big>\n</br>
+ <br>A binary tree is balanced if the height of the tree is O(Log n) where n is the number of nodes. For Example, the AVL tree maintains O(Log n) height by making sure that the difference between the heights of the left and right subtrees is at most 1. Red-Black trees maintain O(Log n) height by making sure that the number of Black nodes on every root to leaf paths is the same and there are no adjacent red nodes. Balanced Binary Search trees are performance-wise good as they provide O(log n) time for search, insert and delete. \n</br>
+ <br> \n</br>
+       <br><big><b> Skewed Binary Tree:-</b> </big>\n</br>
+ <br> \n</br>
+ <br> A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.\n</br>
+
+   </string>
+
+    <string name="BINARYTREECODE">
+       <br> #include &lt;iostream&gt;\n</br>
+<br>#include &lt;bits/stdc++.h&gt;\n</br>
+<br>using namespace std;\n</br>
+<br>struct Node\n</br>
+<br>{\n</br>
+  <br> int value;\n</br>
+  <br> struct Node *left, *right;\n</br>
+<br>}\n</br>
+<br>struct Node *getEmptynode(int val)\n</br>
+<br>{\n</br>
+  <br> struct Node *tempNode = (struct Node *)malloc(sizeof(struct Node));\n</br>
+ <br>  tempNode->value = val;\n</br>
+  <br> tempNode->left = NULL;\n</br>
+  <br> tempNode->right = NULL;\n</br>
+    <br> return tempNode;\n</br>
+<br>}\n</br>
+<br>struct Node *successor(struct Node *node)\n</br>
+<br>{\n</br>
+   <br> struct Node *present = node;\n</br>
+<br>// going to the left most node\n</br>
+  <br>  while (present != NULL &#38;&#38; present->left != NULL)\n</br>
+   <br> {\n</br>
+     <br>  present = present->left;\n</br>
+    <br>}\n</br>
+   <br>  return present;\n</br>
+ <br>}\n</br>
+<br>struct Node *insert(struct Node *node, int value)\n</br>
+<br>{\n</br>
+  <br> if (node == NULL)\n</br>
+  <br> {\n</br>
+    <br>  return getEmptynode(value);\n</br>
+   <br>}\n</br>
+  <br> if (value &lt; node-&gt;value)\n</br>
+  <br> {\n</br>
+   <br>   node->left = insert(node->left, value);\n</br>
+  <br> }\n</br>
+  <br> else\n</br>
+  <br> {\n</br>
+    <br>  node->right = insert(node->right, value);\n</br>
+  <br> }\n</br>
+    <br>  return node;\n</br>
+<br>}\n</br>
+<br>int searchInBST(struct Node *node, int value)\n</br>
+<br>{\n</br>
+  <br> struct Node *current = node;\n</br>
+  <br> while (current->value != value)\n</br>
+    <br>{\n</br>
+   <br> if (current->value > value)\n</br>
+    <br>  {\n</br>
+    <br>  current = current->left;\n</br>
+    <br>  }\n</br>
+   <br> else\n</br>
+   <br>  {\n</br>
+    <br> current = current->right;\n</br>
+   <br>  }\n</br>
+  <br> if (current == NULL)\n</br>
+  <br>   {\n</br>
+   <br> return 0;\n</br>
+  <br>   }\n</br>
+  <br> }\n</br>
+<br>return 1;\n</br>
+<br>}\n</br>
+<br>void inorder(struct Node *root)\n</br>
+<br>{\n</br>
+<br> if (root != NULL)\n</br>
+  <br>{\n</br>
+   <br>inorder(root->left);\n</br>
+  <br> cout &lt;&lt; root-&gt;value &lt;&lt; " ";\n</br>
+  <br> inorder(root->right);\n</br>
+ <br> }\n</br>
+<br>}\n</br>
+<br>struct Node *deleteNode(struct Node *node, int value)\n</br>
+<br>{\n</br>
+<br> if (node == NULL)\n</br>
+ <br> {\n</br>
+  <br> return node;\n</br>
+  <br>}\n</br>
+ <br>if (value &lt; node->value)\n</br>
+<br>  {\n</br>
+ <br>  node->left = deleteNode(node->left, value);\n</br>
+ <br> }\n</br>
+<br>else if (value > node->value)\n</br>
+ <br>{\n</br>
+ <br>  node->right = deleteNode(node->right, value);\n</br>
+ <br>}\n</br>
+<br>else\n</br>
+<br>{\n</br>
+<br>if (node->left == NULL)\n</br>
+ <br>{\n</br>
+ <br>struct Node *temp = node->right;\n</br>
+ <br>free(node);\n</br>
+ <br>return temp;\n</br>
+ <br>}\n</br>
+<br> else if (node->right == NULL)\n</br>
+ <br>{\n</br>
+ <br>struct Node *temp = node->left;\n</br>
+ <br>free(node);\n</br>
+ <br>return temp;\n</br>
+ <br> }\n</br>
+ <br>struct Node *temp = successor(node->right);\n</br>
+<br> node->value = temp->value;\n</br>
+ <br>node->right = deleteNode(node->right, temp->value);\n</br>
+<br>}\n</br>
+<br>return node;\n</br>
+<br>}\n</br>
+<br>int main()\n</br>
+ <br>{\n</br>
+ <br> struct Node *root = NULL;\n</br>
+ <br> root = insert(root, 8);\n</br>
+  <br>root = insert(root, 4);\n</br>
+  <br>root = insert(root, 12);\n</br>
+  <br>root = insert(root, 2);\n</br>
+  <br>root = insert(root, 6);\n</br>
+ <br> root = insert(root, 10);\n</br>
+ <br> root = insert(root, 14);\n</br>
+  <br>root = insert(root, 1);\n</br>
+  <br>root = insert(root, 3);\n</br>
+  <br>root = insert(root, 5);\n</br>
+  <br>root = insert(root, 7);\n</br>
+  <br>root = insert(root, 9);\n</br>
+  <br>root = insert(root, 11);\n</br>
+  <br>root = insert(root, 13);\n</br>
+  <br> root = insert(root, 15);\n</br>
+<br>\n</br>
+ <br>cout &lt;&lt; "InOrder Traversal after inserting all nodes: " &lt;&lt; endl;\n</br>
+ <br>inorder(root);\n</br>
+ <br>root = insert(root, -10);\n</br>
+ <br>cout &lt;&lt;"\nInOrder Traversal after inserting -10 : " &lt;&lt; endl;\n</br>
+ <br>inorder(root);\n</br>
+ <br>cout &lt;&lt;"\nSearching -5 in the BST: " &lt;&lt; searchInBST(root, -5) &lt;&lt; endl;\n</br>
+ <br>cout &lt;&lt; "Searching -10 in the BST: " &lt;&lt; searchInBST(root, -10) &lt;&lt; endl;\n</br>
+ <br>root = deleteNode(root,8);\n</br>
+ <br>cout&lt;&lt;"After deleting node 8, inorder traversal: "&lt;&lt;endl;\n</br>
+ <br>inorder(root);\n</br>
+ <br>root = deleteNode(root,-10);\n</br>
+ <br>cout&lt;&lt;"\nAfter deleting node -10, inorder traversal: "&lt;&lt;endl;\n</br>
+ <br>inorder(root);\n</br>
+        <br>}\n</br>
+    </string>
+
+    //BINARY SEARCH TREE
+
+    <string name="bst">
+        <br><big><b>Binary Search Tree</b></big> is a node-based binary tree data structure which has the following properties:\n</br>
+<br> \n</br>
+<br>1. The left subtree of a node contains only nodes with keys lesser than the node’s key. \n</br>
+<br>2. The right subtree of a node contains only nodes with keys greater than the node’s key. \n</br>
+<br>3. The left and right subtree each must also be a binary search tree. \n</br>
+         <br> \n</br>
+      <br> <big> <b>Time Complexity:</b></big> The worst-case time complexity of search and insert operations is O(h) where h is the height of the Binary Search Tree. In the worst case, we may have to travel from root to the deepest leaf node. The height of a skewed tree may become n and the time complexity of search and insert operation may become<b> O(n)</b>.\n</br>
+   <br> \n</br>
+        <br><big>  <b> Searching a key :</b></big> \n</br>
+
+<br> For searching a value, if we had a sorted array we could have performed a binary search. Let’s say we want to search a number in the array, in binary search, we first define the complete list as our search space, the number can exist only within the search space. Now we compare the number to be searched or the element to be searched with the middle element (median) of the search space and if the record being searched is less than the middle element, we go searching in the left half, else we go searching in the right half, in case of equality we have found the element. In binary search we start with ‘n’ elements in search space and if the mid element is not the element that we are looking for, we reduce the search space to ‘n/2’ we keep reducing the search space until we either find the record that we are looking for or we get to only one element in search space and be done with this whole reduction. \n</br>
+ <br> \n</br>
+ <br>Search operations in binary search tree will be very similar. Let’s say we want to search for the number, we start at the root, and then we compare the value to be searched with the value of the root, if it’s equal we are done with the search if it’s smaller we know that we need to go to the left subtree because in a binary search tree all the elements in the left subtree are smaller and all the elements in the right subtree are larger. Searching an element in the binary search tree is basically this traversal, at each step we go either left or right and at each step we discard one of the sub-trees. If the tree is balanced (we call a tree balanced if for all nodes the difference between the heights of left and right subtrees is not greater than one) we start with a search space of ‘n’ nodes and as we discard one of the sub-trees, we discard ‘n/2’ nodes so our search space gets reduced to ‘n/2’. In the next step we reduce the search space to ‘n/4’ and we repeat until we find the element or our search space is reduced to only one node. The search here is also a binary search hence the name; Binary Search Tree.\n</br>
+ <br> \n</br>
+        <br><big><b>Insertion of a key :\n</b></big> </br>
+ <br> \n</br>
+ <br> A new key is always inserted at the leaf. We start searching a key from the root until we hit a leaf node. Once a leaf node is found, the new node is added as a child of the leaf node. \n</br>
+ <br> \n</br>
+        <br><big><b>Some Interesting Facts: \n</b></big></br>
+ <br> \n</br>
+        <br> <b>1.</b>Inorder traversal of BST always produces sorted output.\n</br>
+    <br> <b>2.</b> We can construct a BST with only Preorder or Postorder or Level Order traversal. Note that we can always get inorder traversal by sorting the only given traversal.\n</br>
+     <br> \n</br>
+    <br>The delete operation is discussed. When we delete a node, three possibilities arise. \n</br>
+ <br> \n</br>
+ <br><b>1)</b> Node to be deleted is the leaf: Simply remove from the tree.  \n</br>
+     <br>    <b>2)</b> Node to be deleted has only one child: Copy the child to the node and delete the child\n</br>
+     <br>    <b>3)</b> Node to be deleted has two children: Find inorder successor of the node. Copy contents of the inorder successor to the node and delete the inorder successor. Note that inorder predecessor can also be used. \n</br>
+   <br> \n</br>
+    <br>The important thing to note is, inorder successor is needed only when the right child is not empty. In this particular case, inorder successor can be obtained by finding the minimum value in the right child of the node.\n</br>
+  <br> \n</br>
+        <br><big><b>Following are some important points in favor of BSTs.\n</b></big></br>
+  <br> \n</br>
+        <br><b>1. </b>We can get all keys in sorted order by just doing Inorder Traversal of BST. This is not a natural operation in Hash Tables and requires extra efforts.\n</br>
+        <br><b>2.</b> Doing order statistics, finding closest lower and greater elements, doing range queries are easy to do with BSTs. Like sorting, these operations are not a natural operation with Hash Tables.\n</br>
+        <br><b>3.</b> BSTs are easy to implement compared to hashing, we can easily implement our own customized BST. To implement Hashing, we generally rely on libraries provided by programming languages.\n</br>
+        <br><b>4.</b>>With Self-Balancing BSTs, all operations are guaranteed to work in O(Logn) time. But with Hashing, Θ(1) is average time and some particular operations may be costly i.e, O(n2 ), especially when table resizing happens.\n</br>
+        <br><b>5.</b> In BST we can do range searches efficiently but in Hash Table we cannot do range search efficienly.\n</br>
+        <br><b>6.</b> BST are memory efficient but Hash table is not.\n</br>
+    </string>
+
+
+    //HEAP
+    <string name="heap">
+        <br>A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:\n</br>
+  <br> \n</br>
+        <br><big><b>Max-Heap:</b></big> In a Max-Heap the key present at the root node must be greatest among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.\n</br>
+         <br> \n</br>
+        <br><big><b>Min-Heap:</b></big> In a Min-Heap the key present at the root node must be minimum among the keys present at all of it’s children. The same property must be recursively true for all sub-trees in that Binary Tree.\n</br>
+<br> \n</br>
+
+      <br><big><b> Special notes related to the Heap</b></big>\n</br>
+        <br> \n</br>
+        <br>1. A binary heap is a binary tree that satisfies two properties: (1) Shape property: all levels, except the last\n</br>
+        <br>2. level, are fully filled and the last level is filled from left to right (2) Heap property\n</br>
+        <br>3. Level order traversal of the heap will give the order in which elements are filled in the array.\n</br>
+        <br>4. Heap is a complete tree structure, so we define the height of a node in a heap as the number of edges on the longest path from the node to a leaf.\n</br>
+        <br>5. We define the height of the heap to be the height of its root. Since a heap of n elements is based on a complete binary tree, its height is O (logn).\n</br>
+        <br>6. n the worst case, we shall see that the basic operations on heaps run in time proportional to the tree height and thus take 0(logn) time.  </br>
+        <br> \n</br>
+<br> \n</br>
+      <br><big><b>  Operations supported by Max-Heap</b></big>\n</br>
+        <br> \n</br>
+<br>Various operations supported by max heap is described below on a high level and will be covered in more detail
+    in subsequent articles:\n</br>
+        <br> \n</br>
+<br><big><b>1. maxHeapify(ALl, i):</b></big> It is a method to rearrange the elements of the heap in order to maintain the heap
+property. This process is required when a certain node at index i causes an imbalance in the heap due to
+some operation on that node.\n</br>
+         <br> \n</br>
+        <br><big><b>buildMaxHeap(AI]):</b></big> We can use the procedure to convert an input array into a max-heap.\n</br>
+         <br> \n</br>
+<br><big><b>2. findMax(heap[1):</b></big> This operation returns the maximum value in the heap and its time complexity is 0(1) as
+it just needs to return A[0].\n</br>
+         <br> \n</br>
+<br><big><b>3. extractMax(ALl):</b></big> This operation removes the maximum element from the heap and returns it. The time
+complexity of this operation is O(logn) as we replace A[0] with A[n-1] - the last element of the heap, and
+then do some operations to maintain the max-heap property.\n</br>
+         <br> \n</br>
+<br><big><b>4. increaseKey(ALl, i, v):</b></big> This operation increases the value at index i in the array to value v. This operation is
+only valid if Ali] less than v, that is the new value is greater than the existing value at index i. This ensures that the
+subtree rooted at index i is still a max-heap. The complexity of this operation is O(log) as after increasing
+the key at index i, the max-heap property of Parent(i) might be violated, and we might need to perform
+some operations to restore it.\n</br>
+         <br> \n</br>
+<br><big><b>5. insertKey(A[], v):</b></big> This operation inserts the element v in a heap, and its complexity is O(lg n). To
+implement this operation, we add an element at the end of the heap (at A[n-1]) and then perform some
+operations to restore the heap property.\n</br>
+         <br> \n</br>
+<br><big><b>6. deleteKey (ALl, i):</b></big> This operation is used to delete an element at index i, and the complexity of this
+operation is O(logn). To delete any element, we can replace it with the last element of the heap, and then
+again perform operations to restore the heap property in case it is violated\n</br>
+
+
+       </string>
+
+    //hasing
+    <string name="hashing">
+        <br>Hashing is a technique or process of mapping keys, and values into the hash table by using a hash function. It is done for faster access to elements. The efficiency of mapping depends on the efficiency of the hash function used.\n</br>
+ <br> \n</br>
+ <br> Let a hash function H(x) maps the value x at the index x%10 in an Array. For example if the list of values is [11,12,13,14,15] it will be stored at positions {1,2,3,4,5} in the array or Hash table respectively.\n</br>
+   <br> \n</br>
+ <br> Suppose we want to design a system for storing employee records keyed using phone numbers. And we want the following queries to be performed efficiently:  \n</br>
+  <br> \n</br>
+  <br> Insert a phone number and corresponding information.\n</br>
+  <br> Search a phone number and fetch the information.\n</br>
+  <br> Delete a phone number and related information.\n</br>
+  <br> We can think of using the following data structures to maintain information about different phone numbers.\n</br> 
+<br> \n</br>
+  <br> Array of phone numbers and records.\n</br>
+  <br> Linked List of phone numbers and records.\n</br>
+  <br> Balanced binary search tree with phone numbers as keys.\n</br>
+        <br> \n</br>
+
+  <br><big><b>Why to use Hashing?</b></big>  \n</br>
+<br> \n</br>
+  <br> If you observe carefully, in a balanced binary search tree, if we try to search , insert or delete any element then the time complexity for the same is O(logn). Now there might be a situation when our applications want to do the same operations in a faster way i.e. in a more optimized way and here hashing comes into play. In hashing, all the above operations can be performed in O(1) i.e. constant time. It is important to understand that the worst case time complexity for hashing remains O(n) but the average case time complexity is O(1).\n</br>
+  <br> Now let us understand a few basic operations of hashing.\n</br>
+<br> \n</br>
+        <br><big> <b>Basic Operations:</b></big>\n</br>
+<br> \n</br>
+  <br><b>1. HashTable:</b>  This operation is used in order to create a new hash table.\n</br>
+    <br> \n</br>
+        <br><b>2. Delete:</b> This operation is used in order to delete a particular key-value pair from the hash table.\n</br>
+   <br> \n</br>
+        <br><b>3. Get:</b> This operation is used in order to search a key inside the hash table and return the value that is associated with that key.\n</br>
+     <br> \n</br>
+        <br><b>4. Put:</b> This operation is used in order to insert a new key-value pair inside the hash table.\n</br>
+     <br> \n</br>
+        <br><b>5. DeleteHashTable:</b> This operation is used in order to delete the hash table\n</br>
+      <br> \n</br>
+        <br><big><b>Hashing Components:</b></big>\n</br>
+<br> \n</br>
+  <br><b>1) Hash Table:</b> An array that stores pointers to records corresponding to a given phone number. An entry in hash table is NIL if no existing phone number has hash function value equal to the index for the entry.  In simple terms, we can say that hash table is a generalization of array. Hash table gives the functionality in which a collection of data is stored in such a way that it is easy to find those items later if required. This makes searching of an element very efficient.\n</br>
+<br> \n</br>
+        <br><b>2) Hash Function:</b>1.  A function that converts a given big phone number to a small practical integer value. The mapped integer value is used as an index in hash table. So, in simple terms we can say that a hash function is used to transform a given key into a specific slot index. Its main job is to map each and every possible key into a unique slot index. If every key is mapped into a unique slot index, then the hash function is known as a perfect hash function. It is very difficult to create a perfect hash function but our job as a programmer is to create such a hash function with the help of which the number of collisions are as few as possible. Collision is discussed ahead.\n</br>
+<br> \n</br>
+  <br>2. A good hash function should have following properties:\n</br>
+<br> \n</br>
+
+        <br>3. Efficiently computable.\n</br>
+   <br>4. Should uniformly distribute the keys (Each table position equally likely for each.\n</br>
+  <br>5. Should minimize collisions.\n</br>
+  <br>6. Should have a low load factor(number of items in table divided by size of the table). \n</br>
+  <br>For example for phone numbers a bad hash function is to take first three digits. A better function is consider last three digits. Please note that this may not be the best hash function. There may be better ways. \n</br>
+<br> \n</br>
+        <br><b>3) Collision Handling:</b> Since a hash function gets us a small number for a big key, there is possibility that two keys result in same value. The situation where a newly inserted key maps to an already occupied slot in hash table is called collision and must be handled using some collision handling technique. Following are the ways to handle collisions: \n</br>
+
+  <br>Chaining:The idea is to make each cell of hash table point to a linked list of records that have same hash function value. Chaining is simple, but requires additional memory outside the table.\n</br>
+  <br>Open Addressing: In open addressing, all elements are stored in the hash table itself. Each table entry contains either a record or NIL. When searching for an element, we examine the table slots one by one until the desired element is found or it is clear that the element is not in the table.\n</br>
+<br> \n</br>
+        <br> Direct Access Table.\n</br>
+  <br> For arrays and linked lists, we need to search in a linear fashion, which can be costly in practice. If we use arrays and keep the data sorted, then a phone number can be searched in O(Logn) time using Binary Search, but insert and delete operations become costly as we have to maintain sorted order. \n</br>
+
+  <br> With balanced binary search tree, we get moderate search, insert and delete times. All of these operations can be guaranteed to be in O(Logn) time. \n</br>
+
+  <br> Another solution that one can think of is to use a direct access table where we make a big array and use phone numbers as index in the array. An entry in array is NIL if phone number is not present, else the array entry stores pointer to records corresponding to phone number. Time complexity wise this solution is the best among all, we can do all operations in O(1) time. For example to insert a phone number, we create a record with details of given phone number, use phone number as index and store the pointer to the created record in table. \n</br>
+  <br> This solution has many practical limitations. First problem with this solution is extra space required is huge. For example if phone number is n digits, we need O(m * 10n) space for table where m is size of a pointer to record. Another problem is an integer in a programming language may not store n digits. \n</br>
+
+  <br> Due to above limitations Direct Access Table cannot always be used. Hashing is the solution that can be used in almost all such situations and performs extremely well compared to above data structures like Array, Linked List, Balanced BST in practice. With hashing we get O(1) search time on average (under reasonable assumptions) and O(n) in worst case.  Now let us understand what hashing is.\n</br>
+
+  <br> Hashing: Hashing is a popular technique for storing and retrieving data as fast as possible. The main reason behind using hashing is that it gives optimal results as it performs optimal searches.\n</br>
+
+    </string>
+</resources>

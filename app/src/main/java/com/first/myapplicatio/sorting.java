@@ -1,0 +1,17 @@
+package com.first.myapplicatio;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import com.github.barteksc.pdfviewer.PDFView;
+public class sorting extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sorting);
+        PDFView pdfView =findViewById(R.id.pdfview);
+        pdfView.fromAsset("sorting.pdf").load();
+
+    }
+}

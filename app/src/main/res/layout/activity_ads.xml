@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".dbms"
+android:backgroundTint="@color/white"
+android:background="@color/white"
+android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/zilla_slab_highlight"
+        android:text="DATA STRUTURE SHEETS"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/aclonica"
+        android:text="BEST SHEETS OF PLACEMENT of DSA"
+        android:textColor="@color/black"
+        android:textSize="40dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/striver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/teal_700"
+        android:ellipsize="end"
+        android:fontFamily="@font/autour_one"
+        android:insetTop="23dp"
+        android:text="striver"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/loveb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/teal_700"
+        android:ellipsize="end"
+        android:fontFamily="@font/autour_one"
+        android:insetTop="23dp"
+        android:text="love babbar"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Apnacollege"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/teal_700"
+        android:ellipsize="end"
+        android:fontFamily="@font/autour_one"
+        android:insetTop="23dp"
+        android:text="apna college"
+        android:textColor="@color/white"
+        android:textSize="24sp">
+
+    </Button>
+
+
+
+
+
+</LinearLayout>
+</LinearLayout>
+
+

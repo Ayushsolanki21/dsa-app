@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.first.myapplicatio">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.M"
+        tools:targetApi="31">
+        <activity
+            android:name=".INTERVIEW"
+            android:exported="false" />
+        <activity
+            android:name=".TC"
+            android:exported="false" />
+        <activity
+            android:name=".dp"
+            android:exported="false" />
+        <activity
+            android:name=".quanta"
+            android:exported="false" />
+        <activity
+            android:name=".os"
+            android:exported="false" />
+        <activity
+            android:name=".cn"
+            android:exported="false" />
+        <activity
+            android:name=".dbms"
+            android:exported="false" />
+        <activity
+            android:name=".oops"
+            android:exported="false" />
+        <activity
+            android:name=".ads"
+            android:exported="false" />
+        <activity
+            android:name=".hashing"
+            android:exported="false" />
+        <activity
+            android:name=".heap"
+            android:exported="false" />
+        <activity
+            android:name=".BST"
+            android:exported="false" />
+        <activity
+            android:name=".binarytree"
+            android:exported="false" />
+        <activity
+            android:name=".queue"
+            android:exported="false" />
+        <activity
+            android:name=".Stack"
+            android:exported="false" />
+        <activity
+            android:name=".Linklist"
+            android:exported="false" />
+        <activity
+            android:name=".sorting"
+            android:exported="false" />
+        <activity
+            android:name=".ARRAY"
+            android:exported="false" />
+        <activity
+            android:name=".Basic"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3891179252230174~8892295695"/>
+    </application>
+
+</manifest>
